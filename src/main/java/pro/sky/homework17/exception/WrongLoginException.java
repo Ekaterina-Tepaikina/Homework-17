@@ -5,7 +5,6 @@ public class WrongLoginException extends RuntimeException {
     public WrongLoginException(String message) {
         super(message);
     }
-
     public WrongLoginException(String message, String login) {
         super(message+" "+login);
         this.login = login;

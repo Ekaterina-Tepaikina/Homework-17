@@ -28,6 +28,7 @@ public class LoginController {
             if (!password.equals(confirmPassword)) {
                 throw new WrongPasswordException("Пароли не совпадают", password, confirmPassword);
             }
+
         } catch (WrongLoginException e) {
             e.printStackTrace();
         } catch (WrongPasswordException e) {

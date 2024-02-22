@@ -6,7 +6,6 @@ public class WrongPasswordException extends RuntimeException {
     public WrongPasswordException(String message) {
         super(message);
     }
-
     public WrongPasswordException(String message, String password, String confirmPassword) {
         super(message+" "+password+" "+confirmPassword);
         this.password = password;
